@@ -33,7 +33,7 @@ a:focus {
 
 .profile {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 200px minmax(0, 1fr);
   gap: 38px;
   align-items: start;
   margin-bottom: 52px;
@@ -75,8 +75,8 @@ li {
 
 .profile-photo {
   display: block;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
   object-fit: cover;
 }
