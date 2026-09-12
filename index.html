@@ -90,23 +90,11 @@
           <h3>Learning Humanoid Control from Visual Teleoperation</h3>
           <p class="organization">G1 Teleop Data Platform · 2026–Present</p>
           <p>
-            I integrate vision-based whole-body teleoperation with synchronized
-            demonstration recording, dataset curation, and ACT-style policy
-            learning for the Unitree G1. A compact Action-Chunking Transformer
-            learns to predict SONIC action tokens from robot-camera observations,
-            robot state, and action history, enabling closed-loop control in MuJoCo.
-          </p>
-          <p>
-            The current task is to touch a target and return to a stable standing
-            pose. Initial fixed-scene evaluation recorded target contact in 6 of 6
-            trials and contact plus stable recovery in 5 of 6 trials. These are
-            preliminary simulation results; generalization and real-robot
-            deployment remain future work.
-          </p>
-          <p class="project-links">
-            <a href="https://github.com/rockwxp/g1-teleop-data-platform">Code on GitHub</a>
-            <span aria-hidden="true"> · </span>
-            <a href="https://github.com/rockwxp/g1-teleop-data-platform/blob/main/docs/architecture/current-system.md">Technical details</a>
+            My current work explores how humanoid robots can learn from human
+            demonstrations, connecting vision-based whole-body teleoperation,
+            embodied data collection, and imitation learning. The demonstrations
+            below show human-driven teleoperation and autonomous target contact
+            by a learned policy in simulation.
           </p>
           <div class="demo-grid">
             <figure>
@@ -116,7 +104,7 @@
               </video>
               <figcaption id="teleop-caption">
                 <strong>Vision-based teleoperation</strong>
-                Human motion drives the simulated G1 through GENMO and SONIC.
+                Human motion drives the simulated G1 in real time.
               </figcaption>
             </figure>
             <figure>
@@ -136,7 +124,7 @@
       <section>
         <h2>News</h2>
         <ul class="news-list">
-          <li><span>[09/2026]</span> Completed an initial closed-loop MuJoCo evaluation of an ACT-style humanoid policy for target contact and stable recovery. Teleoperation and policy demos are now available above.</li>
+          <li><span>[09/2026]</span> Added demonstrations of vision-based humanoid teleoperation and learned-policy execution in simulation.</li>
           <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
           <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
         </ul>
