@@ -11,7 +11,7 @@
     <meta property="og:title" content="Xiaopeng (Rock) Wu" />
     <meta
       property="og:description"
-      content="Embodied AI, humanoid robotics, vision-based teleoperation, and robot learning infrastructure."
+      content="Embodied AI, humanoid robotics, vision-based teleoperation, and ACT-based imitation learning."
     />
     <meta property="og:url" content="https://rockwxp.github.io/" />
     <title>Xiaopeng (Rock) Wu</title>
@@ -67,9 +67,13 @@
             My research focuses on embodied AI and humanoid robotics.
           </p>
           <p>
-            I work on vision-based whole-body teleoperation, embodied data
-            collection, Vision-Language-Action model training and deployment,
-            sim-to-real evaluation, and autonomous behaviors for humanoid robots.
+            My current research focuses on vision-based whole-body teleoperation,
+            embodied data collection, and imitation learning for humanoid robots.
+            I develop policies based on Action-Chunking Transformers (ACT) that
+            learn from human demonstrations and evaluate their closed-loop
+            behavior in simulation. My broader interests include
+            Vision-Language-Action (VLA) models, sim-to-real transfer, and
+            autonomous humanoid navigation.
           </p>
           <p>
             Before graduate research, I spent eight years building production
@@ -77,53 +81,65 @@
             PayPal. I bring software engineering, distributed systems, and
             production reliability experience to robotics research.
           </p>
-          <p>
-            <strong>Goal:</strong> Build reliable humanoid systems that learn
-            from high-quality real-world interaction data.
-          </p>
-          <p>
-            <strong>Research Focus:</strong> Humanoid teleoperation, embodied
-            data, VLA systems, sim-to-real evaluation, and robot learning infrastructure.
-          </p>
-          <p>
-            <strong>Current Project:</strong> G1 Teleop Data Platform.
-          </p>
         </div>
       </header>
 
-      <section>
-        <h2>News</h2>
-        <ul class="news-list">
-          <li><span>[08/2026]</span> Building the G1 Teleop Data Platform for vision-based teleoperation, embodied data collection, and VLA development.</li>
-          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Current Work</h2>
-        <article class="project">
-          <div class="project-year">2026</div>
-          <div>
-            <h3>G1 Teleop Data Platform</h3>
-            <p>
-              A modular, vision-based platform for Unitree G1 teleoperation,
-              embodied data collection, and VLA training and deployment. The
-              system connects human demonstrations, synchronized robot data,
-              policy development, and on-robot evaluation.
-            </p>
-            <p class="note">Private repository; public documentation and results are in preparation.</p>
+      <section aria-labelledby="research-heading">
+        <h2 id="research-heading">Current Research</h2>
+        <article class="research-project">
+          <h3>Learning Humanoid Control from Visual Teleoperation</h3>
+          <p class="organization">G1 Teleop Data Platform · 2026–Present</p>
+          <p>
+            I integrate vision-based whole-body teleoperation with synchronized
+            demonstration recording, dataset curation, and ACT-style policy
+            learning for the Unitree G1. A compact Action-Chunking Transformer
+            learns to predict SONIC action tokens from robot-camera observations,
+            robot state, and action history, enabling closed-loop control in MuJoCo.
+          </p>
+          <p>
+            The current task is to touch a target and return to a stable standing
+            pose. Initial fixed-scene evaluation recorded target contact in 6 of 6
+            trials and contact plus stable recovery in 5 of 6 trials. These are
+            preliminary simulation results; generalization and real-robot
+            deployment remain future work.
+          </p>
+          <p class="project-links">
+            <a href="https://github.com/rockwxp/g1-teleop-data-platform">Code on GitHub</a>
+            <span aria-hidden="true"> · </span>
+            <a href="https://github.com/rockwxp/g1-teleop-data-platform/blob/main/docs/architecture/current-system.md">Technical details</a>
+          </p>
+          <div class="demo-grid">
+            <figure>
+              <video controls playsinline preload="none" poster="assets/vision-teleoperation.jpg" aria-label="Vision-based whole-body teleoperation of G1 in MuJoCo" aria-describedby="teleop-caption">
+                <source src="assets/vision-teleoperation.mp4" type="video/mp4" />
+                <a href="assets/vision-teleoperation.mp4">Watch the teleoperation demonstration</a>.
+              </video>
+              <figcaption id="teleop-caption">
+                <strong>Vision-based teleoperation</strong>
+                Human motion drives the simulated G1 through GENMO and SONIC.
+              </figcaption>
+            </figure>
+            <figure>
+              <video controls playsinline preload="none" poster="assets/act-policy-inference.jpg" aria-label="ACT-style policy performing target contact in MuJoCo" aria-describedby="policy-caption">
+                <source src="assets/act-policy-inference.mp4" type="video/mp4" />
+                <a href="assets/act-policy-inference.mp4">Watch the ACT policy demonstration</a>.
+              </video>
+              <figcaption id="policy-caption">
+                <strong>ACT policy · Online inference</strong>
+                A learned policy autonomously performs target contact in MuJoCo.
+              </figcaption>
+            </figure>
           </div>
         </article>
       </section>
 
       <section>
-        <h2>Research Interests</h2>
-        <p>
-          Humanoid robotics, embodied AI, robot teleoperation, multimodal robot
-          data, Vision-Language-Action models, sim-to-real transfer, robot learning
-          infrastructure, autonomous navigation, and systematic evaluation on
-          physical robots.
-        </p>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span>[09/2026]</span> Completed an initial closed-loop MuJoCo evaluation of an ACT-style humanoid policy for target contact and stable recovery. Teleoperation and policy demos are now available above.</li>
+          <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
+          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
+        </ul>
       </section>
 
       <section>
@@ -139,8 +155,8 @@
             </p>
             <p>
               Research in embodied AI and humanoid robotics, including whole-body
-              teleoperation, data collection, VLA systems, sim-to-real experiments,
-              autonomous behaviors, and physical robot validation.
+              teleoperation, synchronized demonstration collection, ACT-based
+              imitation learning, and closed-loop policy evaluation in MuJoCo.
             </p>
           </div>
         </article>
@@ -175,7 +191,7 @@
       </section>
 
       <footer>
-        <p>Last updated August 2026.</p>
+        <p>Last updated September 2026.</p>
       </footer>
     </main>
   </body>
