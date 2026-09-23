@@ -81,33 +81,24 @@ li {
   object-fit: cover;
 }
 
-.profile-contact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 28px;
-  margin-top: 18px;
-  text-align: left;
-}
-
 .profile-links {
   display: flex;
-  justify-content: flex-start;
-  gap: 24px;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  margin-top: 12px;
   font-size: 14px;
+  white-space: nowrap;
 }
 
-.profile-links a {
-  padding: 2px 0;
-  text-underline-offset: 4px;
-}
+.profile-links span { color: #555; }
+.profile-links a { text-underline-offset: 3px; }
 
 .profile-email {
-  margin: 0;
-  color: #555;
+  margin: 20px 0 0;
   font-size: 14px;
-  user-select: all;
 }
+.profile-email span { user-select: all; }
 
 section {
   margin-bottom: 46px;
@@ -218,9 +209,10 @@ a:focus-visible, video:focus-visible { outline: 2px solid #1769aa; outline-offse
   .demo-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
-/* A brief identity line, compact evidence, and links to deeper material. */
-h1 { margin-bottom: 8px; }
-.profile-role { margin: 0 0 26px; color: #555; font-size: 16px; }
+/* Bilingual name centered above the portrait and biography. */
+h1 { margin-bottom: 40px; font-size: 36px; text-align: center; }
+.chinese-name { display: inline-block; margin-left: 14px; font-weight: 400; }
 @media (max-width: 680px) {
-  .profile-role { text-align: center; }
+  h1 { font-size: 28px; margin-bottom: 28px; }
+  .chinese-name { margin-left: 8px; }
 }
