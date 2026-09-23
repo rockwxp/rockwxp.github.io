@@ -11,7 +11,7 @@
     <meta property="og:title" content="Xiaopeng (Rock) Wu" />
     <meta
       property="og:description"
-      content="Embodied AI, humanoid robotics, vision-based teleoperation, and ACT-based imitation learning."
+      content="Robot learning for humanoid locomotion and manipulation, backed by eight years of software and data-platform engineering experience."
     />
     <meta property="og:url" content="https://rockwxp.github.io/" />
     <title>Xiaopeng (Rock) Wu</title>
@@ -41,6 +41,7 @@
   <body>
     <main class="page">
       <h1>Xiaopeng (Rock) Wu</h1>
+      <p class="profile-role">Robotics Researcher &amp; Software Engineer</p>
       <header class="profile">
         <div class="profile-sidebar">
           <img
@@ -54,11 +55,13 @@
             <a href="https://github.com/rockwxp">GitHub</a>
             <span>/</span>
             <a href="https://www.linkedin.com/in/rock-wu/">LinkedIn</a>
+            <span>/</span>
+            <a href="mailto:xwu23@binghamton.edu">Email</a>
           </p>
         </div>
         <div class="profile-text">
           <p>
-            I am a graduate researcher in Computer Science at
+            I am a master’s student and graduate researcher in Computer Science at
             <a href="https://www.binghamton.edu/">Binghamton University</a>,
             working in the
             <a href="https://bu-air-lab.github.io/">Autonomous Intelligent Robotics (AIR) Lab</a>
@@ -67,12 +70,10 @@
             My research focuses on robot learning for humanoid locomotion and manipulation.
           </p>
           <p>
-            My current work connects vision-based whole-body teleoperation,
-            demonstration data collection, and imitation learning for humanoid
-            robots. I develop policies that learn from human demonstrations and
-            evaluate their behavior in simulation. My long-term goal is
-            general-purpose humanoid loco-manipulation, enabling robots to move
-            and manipulate objects across different tasks.
+            I build systems that connect human demonstrations with learned robot
+            behavior. My work spans visual teleoperation, demonstration data, and
+            imitation learning, with the long-term goal of general-purpose
+            humanoid loco-manipulation.
           </p>
           <p>
             Before graduate research, I spent eight years building production
@@ -89,46 +90,48 @@
           <h3>Learning Humanoid Control from Visual Teleoperation</h3>
           <p class="organization">G1 Teleop Data Platform · 2026–Present</p>
           <p>
-            My current work explores how humanoid robots can learn from human
-            demonstrations, connecting vision-based whole-body teleoperation,
-            embodied data collection, and imitation learning. The demonstrations
-            below show human-operated bimanual box relocation and autonomous
-            target interaction by a learned policy in simulation.
+            I develop a platform for collecting human demonstrations and training
+            humanoid task policies. Current demonstrations include whole-body
+            teleoperation, autonomous target interaction, and human-operated
+            bimanual box relocation in simulation.
           </p>
+          <p class="project-links"><a href="assets/humanoid-loco-manipulation-poster.pdf">Research poster (PDF)</a></p>
           <div class="demo-grid">
             <figure>
-              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Vision-based teleoperation for bimanual box relocation in simulation" aria-describedby="teleop-caption">
-                <source src="assets/bimanual-box-relocation.mp4" type="video/mp4" />
-                <a href="assets/bimanual-box-relocation.mp4">Watch the teleoperation demonstration</a>.
+              <video controls playsinline preload="none" poster="assets/vision-teleoperation-silent.jpg" aria-label="Vision-based whole-body teleoperation in simulation" aria-describedby="teleop-caption">
+                <source src="assets/vision-teleoperation-silent.mp4" type="video/mp4" />
+                <a href="assets/vision-teleoperation-silent.mp4">Watch the whole-body teleoperation demonstration</a>.
               </video>
               <figcaption id="teleop-caption">
-                <strong>Vision-based teleoperation · Bimanual box relocation</strong>
-                Human motion guides the simulated robot to lift the yellow box
-                with both hands, carry it to the other side of the black box,
-                and put it down.
+                <strong>Whole-body teleoperation</strong>
+                Human motion drives the simulated robot in real time.
               </figcaption>
             </figure>
             <figure>
-              <video controls playsinline preload="none" poster="assets/autonomous-target-interaction.jpg" aria-label="ACT-style policy performing target contact in MuJoCo" aria-describedby="policy-caption">
+              <video controls playsinline preload="none" poster="assets/autonomous-target-interaction.jpg" aria-label="Learned policy performing autonomous target interaction in simulation" aria-describedby="policy-caption">
                 <source src="assets/act-policy-inference.mp4" type="video/mp4" />
-                <a href="assets/act-policy-inference.mp4">Watch the ACT policy demonstration</a>.
+                <a href="assets/act-policy-inference.mp4">Watch the learned-policy demonstration</a>.
               </video>
               <figcaption id="policy-caption">
-                <strong>ACT policy · Online inference</strong>
-                A learned policy autonomously performs target contact in MuJoCo.
+                <strong>Autonomous target interaction</strong>
+                A learned policy approaches a target, touches it, and returns to standing.
+              </figcaption>
+            </figure>
+            <figure>
+              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Human-operated bimanual box relocation in simulation" aria-describedby="box-caption">
+                <source src="assets/bimanual-box-relocation.mp4" type="video/mp4" />
+                <a href="assets/bimanual-box-relocation.mp4">Watch the bimanual box relocation demonstration</a>.
+              </video>
+              <figcaption id="box-caption">
+                <strong>Bimanual box relocation</strong>
+                Through visual teleoperation, an operator guides the robot to lift, carry, and place a box.
               </figcaption>
             </figure>
           </div>
         </article>
       </section>
 
-      <section>
-        <h2>News</h2>
-        <ul class="news-list">
-          <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
-          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
-        </ul>
-      </section>
+
 
       <section>
         <h2>Experience</h2>
@@ -176,6 +179,14 @@
           </div>
         </article>
 
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
+          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
+        </ul>
       </section>
 
       <footer>

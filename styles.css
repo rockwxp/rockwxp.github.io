@@ -191,7 +191,7 @@ footer {
 
 .research-project > h3 { font-size: 19px; }
 .project-links { margin: 18px 0; }
-.demo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.demo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .demo-grid figure { margin: 0; min-width: 0; }
 .demo-grid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; object-fit: contain; border-radius: 6px; }
 .demo-grid figcaption { margin-top: 10px; color: #555; font-size: 13px; }
@@ -199,4 +199,13 @@ footer {
 a:focus-visible, video:focus-visible { outline: 2px solid #1769aa; outline-offset: 4px; }
 @media (max-width: 680px) {
   .demo-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* A brief identity line, compact evidence, and links to deeper material. */
+h1 { margin-bottom: 8px; }
+.profile-role { margin: 0 0 26px; color: #555; font-size: 16px; }
+.profile-links { white-space: nowrap; font-size: 14px; }
+.profile-links span { margin: 0 5px; }
+@media (max-width: 680px) {
+  .profile-role { text-align: center; }
 }
