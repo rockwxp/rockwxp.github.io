@@ -190,7 +190,7 @@ footer {
 }
 
 .research-project > h3 { font-size: 19px; }
-.project-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 18px 0 24px; }
+.project-links { margin: 18px 0; }
 .demo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .demo-grid figure { margin: 0; min-width: 0; }
 .demo-grid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; object-fit: contain; border-radius: 6px; }
@@ -199,19 +199,4 @@ footer {
 a:focus-visible, video:focus-visible { outline: 2px solid #1769aa; outline-offset: 4px; }
 @media (max-width: 680px) {
   .demo-grid { grid-template-columns: 1fr; gap: 24px; }
-}
-
-/* Research material follows the existing compact academic layout. */
-.profile-links { white-space: nowrap; font-size: 14px; }
-.profile-links span { margin: 0 5px; }
-.pipeline-section { margin-top: 30px; scroll-margin-top: 24px; }
-h4 { margin: 0 0 14px; font-size: 17px; font-weight: 600; }
-.pipeline-figure { margin: 0; }
-.pipeline-figure img { display: block; width: 100%; height: auto; }
-.pipeline-figure figcaption { margin-top: 12px; font-size: 13px; color: #555; }
-.research-takeaway { margin: 22px 0 16px; }
-.poster-credit { margin: 0; font-size: 13px; color: #666; }
-@media (max-width: 680px) {
-  .research-project > h3 { font-size: 19px; }
-  .pipeline-section { margin-top: 26px; }
 }

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Xiaopeng (Rock) Wu is a master’s student at Binghamton University researching robot learning, human demonstrations, and humanoid loco-manipulation in the AIR Lab."
+      content="Xiaopeng (Rock) Wu is a graduate researcher in the Autonomous Intelligent Robotics Lab at Binghamton University, advised by Prof. Shiqi Zhang."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Xiaopeng (Rock) Wu" />
     <meta
       property="og:description"
-      content="Robot learning for humanoid locomotion and manipulation, connecting visual teleoperation, demonstration data, and imitation learning."
+      content="Embodied AI, humanoid robotics, vision-based teleoperation, and ACT-based imitation learning."
     />
     <meta property="og:url" content="https://rockwxp.github.io/" />
     <title>Xiaopeng (Rock) Wu</title>
@@ -54,13 +54,11 @@
             <a href="https://github.com/rockwxp">GitHub</a>
             <span>/</span>
             <a href="https://www.linkedin.com/in/rock-wu/">LinkedIn</a>
-            <span>/</span>
-            <a href="mailto:xwu23@binghamton.edu">Email</a>
           </p>
         </div>
         <div class="profile-text">
           <p>
-            I am a master’s student in Computer Science at
+            I am a graduate researcher in Computer Science at
             <a href="https://www.binghamton.edu/">Binghamton University</a>,
             working in the
             <a href="https://bu-air-lab.github.io/">Autonomous Intelligent Robotics (AIR) Lab</a>
@@ -69,13 +67,12 @@
             My research focuses on robot learning for humanoid locomotion and manipulation.
           </p>
           <p>
-            My long-term goal is general-purpose humanoid loco-manipulation:
-            robots that can move through their surroundings and interact with
-            objects. I currently build a demonstration-learning pipeline that
-            connects vision-based teleoperation, demonstration data, imitation
-            learning, and autonomous policy execution. This work provides a
-            foundation for learning tasks such as grasping, carrying, and
-            relocating objects.
+            My current work connects vision-based whole-body teleoperation,
+            demonstration data collection, and imitation learning for humanoid
+            robots. I develop policies that learn from human demonstrations and
+            evaluate their behavior in simulation. My long-term goal is
+            general-purpose humanoid loco-manipulation, enabling robots to move
+            and manipulate objects across different tasks.
           </p>
           <p>
             Before graduate research, I spent eight years building production
@@ -88,89 +85,46 @@
 
       <section aria-labelledby="research-heading">
         <h2 id="research-heading">Current Research</h2>
-        <article class="research-project" id="humanoid-learning">
-          <h3>Towards Humanoid Loco-Manipulation through Learning from Demonstration</h3>
-          <p class="organization">Ongoing research · 2026–Present</p>
+        <article class="research-project">
+          <h3>Learning Humanoid Control from Visual Teleoperation</h3>
+          <p class="organization">G1 Teleop Data Platform · 2026–Present</p>
           <p>
-            I connect visual teleoperation data with imitation learning and
-            whole-body control. The current system supports human demonstration
-            collection, data inspection and preparation, policy training, and
-            execution with robot feedback. The goal is to use this workflow to
-            learn increasingly complex tasks involving both movement and object
-            manipulation.
+            My current work explores how humanoid robots can learn from human
+            demonstrations, connecting vision-based whole-body teleoperation,
+            embodied data collection, and imitation learning. The demonstrations
+            below show human-operated bimanual box relocation and autonomous
+            target interaction by a learned policy in simulation.
           </p>
-          <p class="project-links">
-            <a href="assets/humanoid-loco-manipulation-poster.pdf">Research poster (PDF)</a>
-            <a href="#learning-pipeline">Learning pipeline</a>
-          </p>
-
           <div class="demo-grid">
             <figure>
-              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Vision-based teleoperation demonstration of bimanual box relocation in simulation" aria-describedby="teleop-caption">
+              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Vision-based teleoperation for bimanual box relocation in simulation" aria-describedby="teleop-caption">
                 <source src="assets/bimanual-box-relocation.mp4" type="video/mp4" />
-                <a href="assets/bimanual-box-relocation.mp4">Watch the bimanual box relocation demonstration</a>.
+                <a href="assets/bimanual-box-relocation.mp4">Watch the teleoperation demonstration</a>.
               </video>
               <figcaption id="teleop-caption">
-                <strong>Teleoperation: Bimanual Box Relocation</strong>
-                An RGB camera captures the operator’s motion to guide a simulated
-                humanoid. The operator moves the yellow box from one side of the
-                black box to the other, using both hands while moving the robot.
-                The video shows the operator, pose tracking, robot camera, and
-                simulated scene.
+                <strong>Vision-based teleoperation · Bimanual box relocation</strong>
+                Human motion guides the simulated robot to lift the yellow box
+                with both hands, carry it to the other side of the black box,
+                and put it down.
               </figcaption>
             </figure>
             <figure>
-              <video controls playsinline preload="none" poster="assets/autonomous-target-interaction.jpg" aria-label="Learned humanoid policy performing autonomous target interaction in simulation" aria-describedby="policy-caption">
+              <video controls playsinline preload="none" poster="assets/autonomous-target-interaction.jpg" aria-label="ACT-style policy performing target contact in MuJoCo" aria-describedby="policy-caption">
                 <source src="assets/act-policy-inference.mp4" type="video/mp4" />
-                <a href="assets/act-policy-inference.mp4">Watch the learned-policy demonstration</a>.
+                <a href="assets/act-policy-inference.mp4">Watch the ACT policy demonstration</a>.
               </video>
               <figcaption id="policy-caption">
-                <strong>Policy Inference: Autonomous Target Interaction</strong>
-                A learned policy uses camera images, robot state, task-phase
-                information, and action history to predict action sequences.
-                The simulated robot approaches and touches a target box, then
-                returns to standing. New observations inform subsequent actions.
+                <strong>ACT policy · Online inference</strong>
+                A learned policy autonomously performs target contact in MuJoCo.
               </figcaption>
             </figure>
           </div>
-
-          <div class="pipeline-section" id="learning-pipeline">
-            <h4>Demonstration-to-Policy Learning Pipeline</h4>
-            <figure class="pipeline-figure">
-              <a href="assets/demonstration-to-policy-pipeline.svg" aria-label="Open the learning pipeline diagram at full size">
-                <img src="assets/demonstration-to-policy-pipeline.png"
-                  width="2046" height="682" loading="lazy" decoding="async"
-                  alt="Human pose to visual teleoperation, raw demonstration data, data inspection, data preparation, imitation learning, and a learned task policy. Live observations feed the policy; action chunks pass through a whole-body controller to the robot, whose feedback supplies new observations." />
-              </a>
-              <figcaption>
-                Human demonstration data are collected through vision-based
-                teleoperation, inspected, and prepared for imitation learning.
-                The learned policy predicts action sequences from live
-                observations; a whole-body controller executes them while robot
-                feedback closes the loop.
-                <a href="assets/demonstration-to-policy-pipeline.svg">View full-size diagram</a>.
-              </figcaption>
-            </figure>
-          </div>
-
-          <p class="research-takeaway">
-            <strong>Current takeaway.</strong> Visual teleoperation data,
-            imitation learning, and robot control are connected in one workflow.
-            Initial simulation results demonstrate autonomous target interaction,
-            providing a starting point for more complex loco-manipulation tasks.
-          </p>
-          <p class="poster-credit">
-            <strong>Poster authors:</strong> Xiaopeng Wu, Austine Oloo,
-            Zainab Altaweel, Xiaohan Zhang, and Shiqi Zhang.<br />
-            School of Computing, Binghamton University.
-          </p>
         </article>
       </section>
 
       <section>
         <h2>News</h2>
         <ul class="news-list">
-          <li><span>[09/2026]</span> Updated my research poster and added a bimanual box relocation video, alongside the autonomous target interaction demo.</li>
           <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
           <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
         </ul>
@@ -188,9 +142,9 @@
               <a href="https://www.cs.binghamton.edu/~szhang/">Prof. Shiqi Zhang</a>
             </p>
             <p>
-              Research in robot learning for humanoid locomotion and manipulation,
-              connecting visual teleoperation, demonstration data, imitation
-              learning, and policy evaluation in simulation.
+              Research in embodied AI and humanoid robotics, including whole-body
+              teleoperation, synchronized demonstration collection, ACT-based
+              imitation learning, and closed-loop policy evaluation in MuJoCo.
             </p>
           </div>
         </article>
@@ -225,7 +179,7 @@
       </section>
 
       <footer>
-        <p>Last updated September 23, 2026.</p>
+        <p>Last updated September 2026.</p>
       </footer>
     </main>
   </body>
