@@ -61,7 +61,7 @@
         </div>
         <div class="profile-text">
           <p>
-            I am a master’s student and graduate researcher in Computer Science at
+            I am a graduate researcher in Computer Science at
             <a href="https://www.binghamton.edu/">Binghamton University</a>,
             working in the
             <a href="https://bu-air-lab.github.io/">Autonomous Intelligent Robotics (AIR) Lab</a>
@@ -98,6 +98,16 @@
           <p class="project-links"><a href="assets/humanoid-loco-manipulation-poster.pdf">Research poster (PDF)</a></p>
           <div class="demo-grid">
             <figure>
+              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Human-operated bimanual box relocation in simulation" aria-describedby="box-caption">
+                <source src="assets/bimanual-box-relocation.mp4" type="video/mp4" />
+                <a href="assets/bimanual-box-relocation.mp4">Watch the bimanual box relocation demonstration</a>.
+              </video>
+              <figcaption id="box-caption">
+                <strong>Bimanual box relocation</strong>
+                Through visual teleoperation, an operator guides the robot to lift, carry, and place a box.
+              </figcaption>
+            </figure>
+            <figure>
               <video controls playsinline preload="none" poster="assets/vision-teleoperation-silent.jpg" aria-label="Vision-based whole-body teleoperation in simulation" aria-describedby="teleop-caption">
                 <source src="assets/vision-teleoperation-silent.mp4" type="video/mp4" />
                 <a href="assets/vision-teleoperation-silent.mp4">Watch the whole-body teleoperation demonstration</a>.
@@ -117,21 +127,17 @@
                 A learned policy approaches a target, touches it, and returns to standing.
               </figcaption>
             </figure>
-            <figure>
-              <video controls playsinline preload="none" poster="assets/bimanual-box-relocation.jpg" aria-label="Human-operated bimanual box relocation in simulation" aria-describedby="box-caption">
-                <source src="assets/bimanual-box-relocation.mp4" type="video/mp4" />
-                <a href="assets/bimanual-box-relocation.mp4">Watch the bimanual box relocation demonstration</a>.
-              </video>
-              <figcaption id="box-caption">
-                <strong>Bimanual box relocation</strong>
-                Through visual teleoperation, an operator guides the robot to lift, carry, and place a box.
-              </figcaption>
-            </figure>
           </div>
         </article>
       </section>
 
-
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
+          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
+        </ul>
+      </section>
 
       <section>
         <h2>Experience</h2>
@@ -145,9 +151,9 @@
               <a href="https://www.cs.binghamton.edu/~szhang/">Prof. Shiqi Zhang</a>
             </p>
             <p>
-              Research in embodied AI and humanoid robotics, including whole-body
-              teleoperation, synchronized demonstration collection, ACT-based
-              imitation learning, and closed-loop policy evaluation in MuJoCo.
+              Research robot learning for humanoid locomotion and manipulation,
+              connecting visual teleoperation, demonstration data, and imitation
+              learning to help robots acquire new skills from human demonstrations.
             </p>
           </div>
         </article>
@@ -157,12 +163,12 @@
           <div>
             <h3>Software Engineer</h3>
             <p class="organization">PayPal, Shanghai</p>
-            <ul>
-              <li>Built a Java, Spark, and Hadoop platform processing more than 200 TB of data daily.</li>
-              <li>Led a five-person team migrating 2 PB of enterprise data to Google Cloud Platform.</li>
-              <li>Developed resource-allocation tooling that reduced distributed job failures by 60%.</li>
-              <li>Maintained more than 99% data consistency during cross-platform migration.</li>
-            </ul>
+            <p>
+              Built a data platform automating over 200 TB of daily processing
+              for data engineering teams, integrating monitoring and resource
+              optimization to improve efficiency and reliability. Led a
+              five-person team through a 2 PB enterprise data migration to the cloud.
+            </p>
           </div>
         </article>
 
@@ -171,22 +177,15 @@
           <div>
             <h3>Software Engineer</h3>
             <p class="organization">PingAn Medical &amp; Healthcare, Shanghai</p>
-            <ul>
-              <li>Built a data-lineage-driven ETL platform that replaced more than 500 scripts.</li>
-              <li>Designed a distributed scheduler supporting up to 1,500 peak tasks.</li>
-              <li>Implemented low-latency CDC pipelines handling more than 1 TB daily.</li>
-            </ul>
+            <p>
+              Developed a data integration and scheduling platform that replaced
+              more than 500 standalone scripts and automated large-scale data
+              workflows. Built data synchronization pipelines processing over
+              1 TB daily to keep downstream systems up to date.
+            </p>
           </div>
         </article>
 
-      </section>
-
-      <section>
-        <h2>News</h2>
-        <ul class="news-list">
-          <li><span>[08/2026]</span> Started building the G1 Teleop Data Platform for vision-based teleoperation and embodied data collection.</li>
-          <li><span>[09/2025]</span> Joined the Autonomous Intelligent Robotics Group as a Graduate Student Researcher.</li>
-        </ul>
       </section>
 
       <footer>
